@@ -1,6 +1,106 @@
-body {
-    border: 1px solid red
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 1em;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    background: ;
+    border: 1px solid red;  
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0.15;
+    width: 96%;
+    
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid brown;
+}
+
+main {
+    margin-top: 15rem;
+}
+
+h1 {font-size: 3rem;}
+
+h2 {font-size: 2rem;}
+
+h3 {font-size: 1.5rem;}
+
+p, a, li{font-size: 1.6rem}
+
+/*styling for mobile devices*/
+@media screen and (max-width: 480px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: no-wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #logo {
+        margin-top: .5rem;
+        width: 100px;
+        border: 1px solid orange;
+    }
+
+    figcaption {
+        
+    }
+
+    #nav-bar {
+        width: 100px;}
+    }
+
+    
+}
+
+
+/* @media screen and (min-width: 480px) {
+    #logo {
+    display: flex;
+    flex-direction: row;
+    
+    width: ;
+    height: ;
+    border: 1px solid orange;
+    float: left;
+}
+
+#header-img {
+    margin-top: 1rem;
+    margin-left: 1.5rem; 
+}
+
+figcaption {
+    margin-top: 4rem;
+    left: ;
+    font-size: 2rem;
+}
+
+#nav-bar {
+    margin-top: 1rem;
+    float: right;
+}
+
+} */
+
+
+
 
 #pricing {
     display: flex;
