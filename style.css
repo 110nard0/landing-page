@@ -9,64 +9,104 @@ html {
 }
 
 body {
-    margin: 1em;
+    margin: 1rem;
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
-    background: ;
     border: 1px solid red;  
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0.15;
-    width: 96%;
-    
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    background-color: grey;
     border: 1px solid brown;
 }
 
-main {
-    margin-top: 15rem;
+figure {
+    border: 1px solid orange;
+}
+
+#nav-bar a {
+        color: black;
+        text-decoration: none;
 }
 
 h1 {font-size: 3rem;}
 
-h2 {font-size: 2rem;}
+h2, figcaption {font-size: 2rem;}
 
 h3 {font-size: 1.5rem;}
 
-p, a, li{font-size: 1.6rem}
+p, a, li {font-size: 1.6rem} 
+
+li {
+    list-style-type: none;
+}
 
 /*styling for mobile devices*/
 @media screen and (max-width: 480px) {
     header {
+        width: 100vw;
+        min-height: 15rem;
         display: flex;
         flex-direction: column;
-        flex-wrap: no-wrap;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
     }
 
-    #logo {
-        margin-top: .5rem;
-        width: 100px;
-        border: 1px solid orange;
+    figure {
+        margin-top: 0.5rem;
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    figcaption {
+    #header-img {
+        width: 8rem;
         
     }
 
-    #nav-bar {
-        width: 100px;}
+    figcaption {
+        margin-top: 0.15rem;
+        font-size: 2.5rem;
     }
 
+    #nav-bar {
+        width: 100%;
+        border: 1px solid yellow;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #nav-bar li {
+        margin: 0.15rem;
+        padding: 0.15rem;
+    }
     
+    main {
+        padding: 1rem;
+        margin-top: 20rem!important;
+        display: flex;
+        flex-flow: column;
+    }
+
+    h1 {font-size: 2.5rem;}
+
+    #hero {
+        text-align: center;
+    }
 }
 
 
