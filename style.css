@@ -44,11 +44,9 @@ h2, figcaption {font-size: 2.5rem;}
 
 h3 {font-size: 2rem;}
 
-p, a, li {font-size: 1.75rem} 
+p, a, li, label {font-size: 1.75rem} 
 
-li {
-    list-style-type: none;
-}
+li {list-style-type: none; }
 
 /*styling for mobile devices*/
 /* 
@@ -185,10 +183,34 @@ li {
     }
 
     .price-box li {
-        padding: 0.5rem;
+        padding: 0.75rem;
         border: 1px dotted grey;
+            border-bottom: none;
     }
 
+    #form {
+        margin: 2.5rem;
+        
+    }
+
+    form div {
+        padding: 0.5rem;
+        margin: 1rem;
+    }
+
+    input {
+        width: 90%;
+        padding: 0.75rem;
+        margin: 0.5rem 0;
+    }
+    
+    button {
+        padding: 1rem;
+        margin: 1rem 12rem;
+        border-radius: 10%;
+        font-size: 1.6rem;
+        color: teal;
+    } 
     
 }
 
