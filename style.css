@@ -14,7 +14,6 @@ body {
     margin: 0.5rem;
     background: #eee;
     font-family: 'Roboto', sans-serif;
-    border: 1px solid red;
 }
 
 
@@ -31,11 +30,6 @@ header {
     left: 0;
     background: rgb(69 42 149 / 1);
     color: #fff;
-    border: 1px solid brown;
-}
-
-figure {
-    border: 1px solid yellow;
 }
 
 #nav-bar a {
@@ -178,8 +172,9 @@ figcaption {font-family: 'Palette Mosaic', cursive;}
     }
 
     #form {
-        padding: 0.75rem;
-        margin: 2rem 0.5rem;
+        width: 75%;
+        padding: 1rem;
+        margin: auto;
     }
 
     form div {
@@ -191,6 +186,8 @@ figcaption {font-family: 'Palette Mosaic', cursive;}
         width: 100%;
         padding: 0.75rem;
         margin: 0.5rem 0;
+        border: 1px;
+        border-radius: 5px;
     }
     
     #button-div {
@@ -249,7 +246,6 @@ figcaption {font-family: 'Palette Mosaic', cursive;}
         margin-left: 3rem;
         display: flex;
         flex-flow: row nowrap;
-        border: 1px solid orange;
     }
 
     #header-img {
@@ -314,7 +310,6 @@ figcaption {font-family: 'Palette Mosaic', cursive;}
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 1px solid blue;
     }
 
     .price-box {
@@ -349,28 +344,25 @@ figcaption {font-family: 'Palette Mosaic', cursive;}
     }
 
      #form {
-        display: block;
-        width: 90%;
-        padding: rem;
-        margin: ;   
+        width: 75%;
+        max-width: 600px!important;
+        padding: 1rem;
+        margin: auto;   
     }
 
     form div {
-        padding: 0rem;
+        padding: 1rem;
         margin: 0.5rem 5rem;
-    }
-
-    .input-div {
-        width: 45rem;
-        max-width: 45rem;
-        padding: 0;
-        margin: 0;
     }
     
     input {
-        width: 80%;
-        padding: 0.75rem;
-        margin: 0.5rem 0;
+        display: block;
+        width: 100%;
+        max-width: 45rem;
+        padding: 1rem;
+        margin: 0.5rem auto;
+        border: 1px;
+        border-radius: 5px;
     }
     
     #button-div {
@@ -385,7 +377,7 @@ figcaption {font-family: 'Palette Mosaic', cursive;}
     button {
         padding: 0.75rem;
         margin: 0.5rem;
-        flex-grow: 1;
+        flex-grow: 2;
         border: 3px double #555;
         border-radius: 10%;
         font-size: 1.6rem;
@@ -424,8 +416,6 @@ figcaption {font-family: 'Palette Mosaic', cursive;}
     }
 
     .price-box {
-        min-width: ;
-        max-width: ;
         width: 100%;
         margin: 1rem;
     }
@@ -433,10 +423,6 @@ figcaption {font-family: 'Palette Mosaic', cursive;}
     .price-box>div>img {
         height: 178px;
         width: 90%;
-    }
-
-    .price-box .bot {
-        height: 0%;
     }
     
     #contact {
