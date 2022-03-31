@@ -14,16 +14,16 @@ body {
     margin: 0.5rem;
     background: #eee;
     font-family: 'Roboto', sans-serif;
-    border: 1px solid red;  
+    border: 1px solid red;
 }
 
 
 /*shared class and id styles*/
 .container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
- }
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
 
 header {
     position:fixed;
@@ -44,7 +44,9 @@ figure {
     text-decoration: none;
 }
 
-h1 {font-size: 2.4rem;}
+h1 {font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+}
 
 h2, figcaption {font-size: 2rem;}
 
@@ -60,7 +62,7 @@ figcaption {font-family: 'Palette Mosaic', cursive;}
 
 
 /*styling for mobile devices*/
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 600px) {
     header {
         width: 100%;
         display: flex;
@@ -75,10 +77,6 @@ figcaption {font-family: 'Palette Mosaic', cursive;}
         flex-flow: row no-wrap;
         justify-content: center;
         align-items: center;
-    }
-
-    #header-img {
-        width: rem;    
     }
 
     figcaption {
@@ -104,18 +102,13 @@ figcaption {font-family: 'Palette Mosaic', cursive;}
         flex-flow: column;
     }
 
-    h1 {
-        margin-bottom: 0.5rem
-    }
-
     #hero {
         padding: 0.5rem;
-        margin-bottom: rem;
         text-align: center;
     }
 
     #features, #pricing {
-        padding: 0.5rem;
+        padding: 1rem;
     }
 
     .grid {
@@ -138,52 +131,52 @@ figcaption {font-family: 'Palette Mosaic', cursive;}
     
     #video {
         width: 100%;
-        margin: 5rem 0;
+        padding: 1rem;
+        margin: 3rem 0;
     }
 
     #pricing {
-        width: 100%;
+        padding: rem;
         display: flex;
-        flex-flow: column;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 1px solid blue;
     }
 
     .price-box {
-        margin: 1rem;
+        width: 80%;
+        margin: 0 auto;
         margin-bottom: 3rem;
         text-align: center;
         border: 1px solid black;
+        border-radius: 5px;
     }
     
     .price-box img {
-        width: 100%;
-        height: 100%;
+        width: 80%;
+        margin-top: 1rem;
         padding: 0.5rem;
-        border: 1px solid grey;
     }
 
     .price-box h3 {
-        padding: 0.6rem;
+        padding: 0.5rem;
         text-transform: uppercase;
     }
 
     .price-box li {
         padding: 0.75rem;
         border: 1px dotted grey;
-        border-bottom: none;
         font-size: 1.5rem;
     }
 
     .btn { 
-        margin-bottom: 2rem;
+        margin: 1rem 0;
         padding: 0.4rem;
     }
 
     #form {
         padding: 0.75rem;
-        margin: 2rem 0.25rem;
+        margin: 2rem 0.5rem;
         
     }
 
@@ -236,37 +229,91 @@ figcaption {font-family: 'Palette Mosaic', cursive;}
         margin-bottom: 1.25rem;
         font-size: 1.25rem;
     }
-}
+} */
 
 
 /*styling for larger screens*/
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 601px) {
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
     #logo {
-    display: flex;
-    flex-direction: row;
-    border: 1px solid orange;
-    float: left;
-}
+        width: 55vw;
+        margin-left: 3rem;
+        display: flex;
+        flex-flow: row no-wrap;
+        border: 1px solid orange;
+    }
 
-#header-img {
-    margin-top: 1rem;
-    margin-left: 1.5rem; 
-}
+    #header-img {
+        margin-right: rem;  
+    }
+    
+    figcaption {
+        margin-top: 2rem;
+    }
+    
+    #nav-bar {
+        width: 40vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+    }
+    
+    #nav-bar li {
+        margin: 0.5rem;
+        margin-top: 1.2rem;
+    }
 
-figcaption {
-    margin-top: 4rem;
-    font-size: 2rem;
-}
+    main {
+        margin-top: 7.5rem!important;
+    }
 
-#nav-bar {
-    margin-top: 1rem;
-    float: right;
-}
+    #hero {
+        padding: 1rem;
+        text-align: center;
+    }
 
-#pricing {
-    display: flex;
-    flex-direction: row;
-    flex-basis: 1;
-}
+    #features{
+        padding: 2.5rem;
+    }
+    
+    .grid {
+        padding: 1rem;
+        padding-right: 3rem;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+    
+    .icon{
+        margin: 2rem;
+    }
 
+    #iframe-container {
+        padding: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    #video {
+        width: 100%;
+        padding: rem;
+        margin: rem;
+    }
+    
+    #pricing {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 1;
+    }
+
+    #price-box
 }
