@@ -347,7 +347,7 @@ figcaption {font-family: 'Palette Mosaic', cursive;}
         width: 75%;
         max-width: 600px!important;
         padding: 1rem;
-        margin: auto;   
+        margin: 2rem auto;   
     }
 
     form div {
@@ -428,4 +428,5 @@ figcaption {font-family: 'Palette Mosaic', cursive;}
     #contact {
         width: 90%;
     }
+    
 }
