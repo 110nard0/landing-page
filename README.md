@@ -1,4 +1,4 @@
-# Product
+# Product Landing Page
 
 This is a product landing page that was created as part of the requirements to obtain the freeCodeCamp Responsive Web Design certification.
 
